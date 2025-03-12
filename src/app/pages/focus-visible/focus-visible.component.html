@@ -1,0 +1,15 @@
+<!-- http://localhost:4200/focus-visible -->
+
+<div>
+    <div class="flex flex-col space-y-4 w-100">
+        <a id="link-one" class="w-fit focus:outline-none">Link One</a>
+        <a href="/one" class="w-fit">Link Two</a>
+
+        <button (focus)="handleFocus($event)" id="button-one" class="text-left w-fit">Button One</button>
+        <button class="text-left w-fit">Button Two</button>
+
+        <div class="bg-gray-200 h-12 flex items-center">
+            <button id="button-three" class="text-left w-fit focus:outline-gray-400">Button Three</button>
+        </div>
+    </div>
+</div>

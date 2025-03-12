@@ -1,0 +1,20 @@
+<!-- http://localhost:4200/aria-invalid-attribute -->
+
+<div>
+    <div>
+        <p [attr.aria-checked]="'true'">ABC</p>
+    </div>
+
+    <div>
+        <p [attr.aria-checked]="'true'">ABC</p>
+        <p [attr.aria-checked]="'true'">ABC</p>
+    </div>
+
+    <div>
+        <button [attr.aria-expanded]="'true'">ABC</button>
+        <button [attr.aria-expanded]="'false'">ABC</button>
+    </div>
+
+    <input type="text" [attr.aria-pressed]="'true'" />
+    <input type="text" [attr.aria-pressed]="'true'" />
+</div>

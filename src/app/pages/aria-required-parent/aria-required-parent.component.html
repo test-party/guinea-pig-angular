@@ -1,0 +1,68 @@
+<!-- http://localhost:4200/aria-required-parent -->
+
+<div>
+    <div>
+        <div>
+            <div role="row">
+                <div role="cell">This Cell needs row and row's parent options</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div role="row">
+            <div role="cell">This Cell has row, needs row's parent options</div>
+        </div>
+    </div>
+
+    <div>
+        <div role="rowgroup">
+            <div role="row">
+                <div role="cell">This Cell has rowgroup, needs row in between and rowgroup's parent options</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div role="row">
+            <div role="cell">This is Cell 1, it needs row and row's parent options</div>
+        </div>
+        <div role="row">
+            <div role="cell">This is supposed to be cell under row. It should be remediated as part of Cell 1's remediation</div>
+        </div>
+    </div>
+
+    <div>
+        <table>
+            <caption role="caption">caption needs parent options</caption>
+        </table>
+    </div>
+
+    <div role="tree">
+        <div role="treeitem">treeitem needs parent options</div>
+        <div role="treeitem">Should be treeitem</div>
+    </div>
+
+    <div role="listbox">
+        <div role="option">option needs parent options</div>
+        <div role="option">Should be Option</div>
+    </div>
+
+    <div role="menu">
+        <div role="menuitem">menuitem needs parent options</div>
+        <div role="menuitem">Should be menuitem</div>
+        <div role="menuitem">Should be menuitem</div>
+    </div>
+
+    <ul>
+        <li role="listitem">listitem needs parent list</li>
+        <li role="listitem">Should be listitem</li>
+        <li role="listitem">Should be listitem</li>
+    </ul>
+
+    <div role="tablist">
+        <div role="tab">tab needs parent tablist</div>
+        <div role="tab">Should be tab</div>
+        <div role="tab">Should be tab</div>
+    </div>
+</div>

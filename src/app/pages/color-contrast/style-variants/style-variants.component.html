@@ -1,0 +1,48 @@
+<!-- http://localhost:4200/color-contrast/style-variants -->
+
+<div style="padding: 20px;">
+    <!-- Inline Styles -->
+    <h1 style="color: #ffffff; background-color: #000000;">
+        Inline: Good Contrast (White on Black)
+    </h1>
+    <p style="color: #cccccc; background-color: #ffffff;">
+        Inline: Poor Contrast (Light Gray on White)
+    </p>
+
+    <!-- Tailwind Styles -->
+    <div class="bg-red-500 text-charcoal">
+        Tailwind: Good Contrast (Charcoal on Red)
+    </div>
+    <div class="bg-gray-300 text-gray-400">
+        Tailwind: Poor Contrast (Gray on Slightly Darker Gray)
+    </div>
+    <div class="bg-gray-300 text-gray-400 flex justify-center h-12">
+        Tailwind: Poor Contrast with additional classes (Gray on Slightly Darker Gray)
+    </div>
+    <div class="bg-gray-300 text-gray-400 flex justify-center h-12">
+        Tailwind: Poor Contrast with additional classes (Gray on Slightly Darker Gray)
+    </div>
+    <div class="text-gray-400 bg-gray-300">
+        Tailwind: Poor Contrast with additional classes (Gray on Slightly Darker Gray)
+    </div>
+    <div class="bg-gray-300 text-gray-400 flex justify-center h-12">
+        Tailwind: Poor Contrast with additional classes (Gray on Slightly Darker Gray)
+    </div>
+    <div class="bg-gray-300 text-gray-400 flex justify-center h-12">
+        Tailwind: Poor Contrast with additional classes (Gray on Slightly Darker Gray)
+    </div>
+
+    <!-- CSS Class-Based Styles -->
+    <div class="black-on-green">
+        CSS-Class: Good Contrast (Black on Green)
+    </div>
+    <div class="red-on-lightred">
+        CSS-Class: Poor Contrast (Bright Red on Light Red)
+    </div>
+    <div class="custom-blue">
+        Custom Blue: Good Contrast (White on Dark Blue)
+    </div>
+    <div class="custom-yellow">
+        Custom Yellow: Poor Contrast (Bright Yellow on Light Yellow)
+    </div>
+</div>

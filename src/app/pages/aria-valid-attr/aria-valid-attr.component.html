@@ -1,0 +1,16 @@
+<!-- http://localhost:4200/aria-valid-attr -->
+
+<div>
+    <button [attr.aria-lab]="'fdasdasdasalse'"> BUTTON 1</button>
+    <button [attr.aria-lab]="'sdadsa'" [attr.aria-labelledby]="'dsadas'"> BUTTON 2</button>
+    <button [attr.aria-lab]="'sdadsa'" [attr.aria-labi]="'dsadas'"> BUTTON 3 </button>
+    <button [attr.aria-lae]="'false'"> BUTTON 4 </button>
+    <button [attr.aria-lae]="''"> BUTTON 5 </button>
+    <button [attr.aria-dsadasdasdsadas]="''"> BUTTON 6 </button>
+
+    <div>
+        <input type="range" [attr.aria-val]="'0'" [attr.aria-valu]="'100'" />
+    </div>
+
+    <p [attr.aria-la]="'false'">A</p>
+</div>
