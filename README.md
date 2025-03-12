@@ -3,9 +3,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.12.
 
 ## How to install and run:
-npm install -g @angular/cli@17
-yarn install
-ng serve
+* npm install -g @angular/cli@17
+* yarn install
+* ng serve
 
 ## Development server
 
