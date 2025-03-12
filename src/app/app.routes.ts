@@ -8,6 +8,34 @@ import { AriaInvalidAttributeComponent } from './pages/aria-invalid-attribute/ar
 import { AriaProhibitedAttributeComponent } from './pages/aria-prohibited-attribute/aria-prohibited-attribute.component';
 import { AriaRequiredAttrComponent } from './pages/aria-required-attr/aria-required-attr.component';
 import { AriaRequiredChildrenComponent } from './pages/aria-required-children/aria-required-children.component';
+import { AriaRequiredParentComponent } from './pages/aria-required-parent/aria-required-parent.component';
+import { AriaRolesComponent } from './pages/aria-roles/aria-roles.component';
+import { AriaToggleComponent } from './pages/aria-toggle/aria-toggle.component';
+import { AriaTooltipNameComponent } from './pages/aria-tooltip-name/aria-tooltip-name.component';
+import { AriaValidAttrComponent } from './pages/aria-valid-attr/aria-valid-attr.component';
+import { ButtonNameComponent } from './pages/button-name/button-name.component';
+import { AudioComponent } from './pages/audio/audio.component';
+import { ColorContrastComponent } from './pages/color-contrast/color-contrast.component';
+import { StyleVariantsComponent } from './pages/color-contrast/style-variants/style-variants.component';
+import { FocusVisibleComponent } from './pages/focus-visible/focus-visible.component';
+import { HeadingsComponent } from './pages/headings/headings.component';
+import { ImagesComponent } from './pages/images/images.component';
+import { LabelComponent } from './pages/label/label.component';
+import { LinkNameComponent } from './pages/link-name/link-name.component';
+import { MetaRefreshComponent } from './pages/meta-refresh/meta-refresh.component';
+import { MetaViewportComponent } from './pages/meta-viewport/meta-viewport.component';
+import { AbbreviationsComponent } from './pages/neurodiversity-ruleset/abbreviations/abbreviations.component';
+import { LanguageOfPageComponent } from './pages/neurodiversity-ruleset/language-of-page/language-of-page.component';
+import { LanguageOfPartsComponent } from './pages/neurodiversity-ruleset/language-of-parts/language-of-parts.component';
+import { PronunciationComponent } from './pages/neurodiversity-ruleset/pronunciation/pronunciation.component';
+import { ReadingLevelComponent } from './pages/neurodiversity-ruleset/reading-level/reading-level.component';
+import { UnusualWordsComponent } from './pages/neurodiversity-ruleset/unusual-words/unusual-words.component';
+import { RegionComponent } from './pages/region/region.component';
+import { ScrollableRegionFocusableComponent } from './pages/scrollable-region-focusable/scrollable-region-focusable.component';
+import { SelectNameComponent } from './pages/select-name/select-name.component';
+import { SvgImgAltComponent } from './pages/svg-img-alt/svg-img-alt.component';
+import { CompliantComponent } from './pages/unordered-list/compliant/compliant.component';
+import { NonCompliantComponent } from './pages/unordered-list/non-compliant/non-compliant.component';
 
 export const routes: Routes = [
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
@@ -19,4 +47,32 @@ export const routes: Routes = [
     { path: 'aria-prohibited-attribute', component: AriaProhibitedAttributeComponent },
     { path: 'aria-required-attribute', component: AriaRequiredAttrComponent },
     { path: 'aria-required-children', component: AriaRequiredChildrenComponent },
+    { path: 'aria-required-parent', component: AriaRequiredParentComponent },
+    { path: 'aria-roles', component: AriaRolesComponent },
+    { path: 'aria-toggle', component: AriaToggleComponent },
+    { path: 'aria-tooltip-name', component: AriaTooltipNameComponent },
+    { path: 'aria-valid-attr', component: AriaValidAttrComponent },
+    { path: 'audio', component: AudioComponent },
+    { path: 'button-name', component: ButtonNameComponent },
+    { path: 'color-contrast', component: ColorContrastComponent },
+    { path: 'color-contrast/style-variants', component: StyleVariantsComponent },
+    { path: 'focus-visible', component: FocusVisibleComponent },
+    { path: 'headings', component: HeadingsComponent },
+    { path: 'images', component: ImagesComponent },
+    { path: 'label', component: LabelComponent },
+    { path: 'link-name', component: LinkNameComponent },
+    { path: 'meta-refresh', component: MetaRefreshComponent },
+    { path: 'meta-viewport', component: MetaViewportComponent },
+    { path: 'neurodiversity-ruleset/abbreviations', component: AbbreviationsComponent },
+    { path: 'neurodiversity-ruleset/language-of-page', component: LanguageOfPageComponent },
+    { path: 'neurodiversity-ruleset/language-of-parts', component: LanguageOfPartsComponent },
+    { path: 'neurodiversity-ruleset/pronunciation', component: PronunciationComponent },
+    { path: 'neurodiversity-ruleset/reading-level', component: ReadingLevelComponent },
+    { path: 'neurodiversity-ruleset/unusual-words', component: UnusualWordsComponent },
+    { path: 'region', component: RegionComponent },
+    { path: 'scrollable-region-focusable', component: ScrollableRegionFocusableComponent },
+    { path: 'select-name', component: SelectNameComponent },
+    { path: 'svg-img-alt', component: SvgImgAltComponent },
+    { path: 'unordered-list/compliant', component: CompliantComponent },
+    { path: 'unordered-list/non-compliant', component: NonCompliantComponent },
 ];
