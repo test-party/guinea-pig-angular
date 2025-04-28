@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class ColorContrastComponent {
-
+  backgroundColor = '#ffffff';
+  color = '#999999';
 }
