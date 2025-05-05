@@ -44,7 +44,7 @@ export const routes: Routes = [
     { path: 'aria-deprecated-role', component: AriaDeprecatedRoleComponent },
     { path: 'aria-meter-name', component: AriaMeterNameComponent },
     { path: 'aria-invalid-attribute', component: AriaInvalidAttributeComponent },
-    { path: 'aria-prohibited-attribute', component: AriaProhibitedAttributeComponent },
+    { path: 'aria-prohibited-attr', component: AriaProhibitedAttributeComponent },
     { path: 'aria-required-attribute', component: AriaRequiredAttrComponent },
     { path: 'aria-required-children', component: AriaRequiredChildrenComponent },
     { path: 'aria-required-parent', component: AriaRequiredParentComponent },
