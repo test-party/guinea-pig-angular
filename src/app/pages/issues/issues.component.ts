@@ -8,4 +8,5 @@ import { CommonModule } from '@angular/common';
   templateUrl: './issues.component.html'
 })
 export class IssuesComponent {
+  readonly show = false;
 }
