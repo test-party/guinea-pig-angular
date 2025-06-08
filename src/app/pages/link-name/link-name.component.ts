@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class LinkNameComponent {
-
+  items = ['Item 1', 'Item 2'];
 }
