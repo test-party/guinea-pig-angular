@@ -13,4 +13,8 @@ export class IssuesComponent {
   showHidden = false;
   items = [1, 2, 3];
   inputValue = '';
+
+  doSomething(): void {
+    console.log('Clicked non-semantic element');
+  }
 }
