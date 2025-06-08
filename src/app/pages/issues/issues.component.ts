@@ -11,8 +11,12 @@ import { FormsModule } from '@angular/forms';
 export class IssuesComponent {
   readonly show = false;
   showHidden = false;
-  items = [1, 2, 3];
   inputValue = '';
+    user = { name: '', loggedIn: false };
+  view = 'x';
+  items = [null, undefined, 'Item 1', 'Item 2'];
+  active = false;
+  selected = '';
 
   doSomething(): void {
     console.log('Clicked non-semantic element');
