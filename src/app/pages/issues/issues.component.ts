@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ImportComponent } from './import/import.component';
 
 @Component({
   selector: 'app-issues',
   standalone: true,
-  imports: [CommonModule,FormsModule], 
+  imports: [CommonModule,FormsModule,ImportComponent], 
   templateUrl: './issues.component.html'
 })
 export class IssuesComponent {
