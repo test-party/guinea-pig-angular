@@ -1,0 +1,225 @@
+<!-- http://localhost:4000/aria-conditional-attr -->
+
+<h1>ARIA Conditional Attributes Test Page</h1>
+
+<p>This page tests the <code>aria-conditional-attr</code> rule, which ensures that ARIA attributes that are required when certain conditions are met are properly implemented.</p>
+
+<section>
+  <h2>Passed Examples (Valid Implementation)</h2>
+
+  <h3>Textbox with aria-autocomplete and proper aria-controls</h3>
+  <label for="valid-search">Search:</label>
+  <input
+    type="text"
+    id="valid-search"
+    role="combobox"
+    [attr.aria-autocomplete]="'list'"
+    [attr.aria-controls]="'search-listbox'"
+    [attr.aria-expanded]="'false'"
+  />
+  <ul id="search-listbox" role="listbox">
+    <li role="option">Option 1</li>
+    <li role="option">Option 2</li>
+  </ul>
+
+  <h3>Switch with aria-checked</h3>
+  <div role="switch" [attr.aria-checked]="'false'" [attr.aria-labelledby]="'switch-label'">
+    <span id="switch-label">Enable notifications</span>
+  </div>
+
+  <h3>Tab with proper aria-controls and aria-selected</h3>
+  <div role="tablist">
+    <button
+      role="tab"
+      [attr.aria-controls]="'panel1'"
+      [attr.aria-selected]="'true'"
+      id="tab1"
+    >
+      Tab 1
+    </button>
+    <button
+      role="tab"
+      [attr.aria-controls]="'panel2'"
+      [attr.aria-selected]="'false'"
+      id="tab2"
+    >
+      Tab 2
+    </button>
+  </div>
+  <div role="tabpanel" id="panel1" [attr.aria-labelledby]="'tab1'">Panel 1 content</div>
+  <div role="tabpanel" id="panel2" [attr.aria-labelledby]="'tab2'">Panel 2 content</div>
+
+  <h3>Checkbox with aria-checked</h3>
+  <div role="checkbox" [attr.aria-checked]="'false'" [attr.aria-labelledby]="'checkbox-label'">
+    <span id="checkbox-label">I agree to the terms</span>
+  </div>
+
+  <h3>Radio with aria-checked</h3>
+  <div role="radiogroup" [attr.aria-labelledby]="'radio-group-label'">
+    <span id="radio-group-label">Choose your preferred contact method:</span>
+    <div role="radio" [attr.aria-checked]="'true'" [attr.aria-labelledby]="'radio1-label'">
+      <span id="radio1-label">Email</span>
+    </div>
+    <div role="radio" [attr.aria-checked]="'false'" [attr.aria-labelledby]="'radio2-label'">
+      <span id="radio2-label">Phone</span>
+    </div>
+  </div>
+
+  <h3>Slider with aria-valuenow</h3>
+  <div
+    role="slider"
+    [attr.aria-valuenow]="'50'"
+    [attr.aria-valuemin]="'0'"
+    [attr.aria-valuemax]="'100'"
+    [attr.aria-labelledby]="'slider-label'"
+  >
+    <span id="slider-label">Volume</span>
+  </div>
+</section>
+
+<section>
+  <h2>Failed Examples (Invalid Implementation)</h2>
+
+  <h3>Combobox missing required aria-controls</h3>
+  <label for="invalid-search1">Search:</label>
+  <input
+    type="text"
+    id="invalid-search1"
+    role="combobox"
+    [attr.aria-autocomplete]="'list'"
+    [attr.aria-expanded]="'false'"
+  />
+  <!-- Missing aria-controls when aria-expanded is present -->
+
+  <h3>Switch missing aria-checked</h3>
+  <div role="switch" [attr.aria-labelledby]="'invalid-switch-label'">
+    <span id="invalid-switch-label">Enable dark mode</span>
+  </div>
+  <!-- Missing required aria-checked attribute -->
+
+  <h3>Tab missing aria-controls</h3>
+  <div role="tablist">
+    <button
+      role="tab"
+      [attr.aria-selected]="'true'"
+      id="invalid-tab1"
+    >
+      Invalid Tab 1
+    </button>
+    <!-- Missing aria-controls attribute -->
+  </div>
+
+  <h3>Tab missing aria-selected</h3>
+  <div role="tablist">
+    <button
+      role="tab"
+      [attr.aria-controls]="'invalid-panel'"
+      id="invalid-tab2"
+    >
+      Invalid Tab 2
+    </button>
+    <!-- Missing aria-selected attribute -->
+  </div>
+
+  <h3>Checkbox missing aria-checked</h3>
+  <div role="checkbox" [attr.aria-labelledby]="'invalid-checkbox-label'">
+    <span id="invalid-checkbox-label">Subscribe to newsletter</span>
+  </div>
+  <!-- Missing required aria-checked attribute -->
+
+  <h3>Radio missing aria-checked</h3>
+  <div role="radiogroup" [attr.aria-labelledby]="'invalid-radio-group-label'">
+    <span id="invalid-radio-group-label">Select payment method:</span>
+    <div role="radio" [attr.aria-labelledby]="'invalid-radio1-label'">
+      <span id="invalid-radio1-label">Credit Card</span>
+    </div>
+    <!-- Missing required aria-checked attribute -->
+  </div>
+
+  <h3>Slider missing aria-valuenow</h3>
+  <div
+    role="slider"
+    [attr.aria-valuemin]="'0'"
+    [attr.aria-valuemax]="'100'"
+    [attr.aria-labelledby]="'invalid-slider-label'"
+  >
+    <span id="invalid-slider-label">Brightness</span>
+  </div>
+  <!-- Missing required aria-valuenow attribute -->
+
+  <h3>Spinbutton missing aria-valuenow</h3>
+  <div
+    role="spinbutton"
+    [attr.aria-valuemin]="'1'"
+    [attr.aria-valuemax]="'10'"
+    [attr.aria-labelledby]="'invalid-spinbutton-label'"
+  >
+    <span id="invalid-spinbutton-label">Quantity</span>
+  </div>
+  <!-- Missing required aria-valuenow attribute -->
+
+  <h3>Scrollbar missing aria-valuenow</h3>
+  <div
+    role="scrollbar"
+    [attr.aria-valuemin]="'0'"
+    [attr.aria-valuemax]="'100'"
+    [attr.aria-labelledby]="'invalid-scrollbar-label'"
+  >
+    <span id="invalid-scrollbar-label">Scroll position</span>
+  </div>
+  <!-- Missing required aria-valuenow attribute -->
+
+  <h3>Progressbar with indeterminate state missing aria-valuenow</h3>
+  <div
+    role="progressbar"
+    [attr.aria-valuemin]="'0'"
+    [attr.aria-valuemax]="'100'"
+    [attr.aria-labelledby]="'invalid-progressbar-label'"
+  >
+    <span id="invalid-progressbar-label">Upload progress</span>
+  </div>
+  <!-- Missing aria-valuenow when progress is determinate -->
+</section>
+
+<section>
+  <h2>Complex Examples</h2>
+
+  <h3>Valid: Expandable Menu Button</h3>
+  <button
+    [attr.aria-expanded]="'false'"
+    [attr.aria-controls]="'menu1'"
+    [attr.aria-haspopup]="'menu'"
+  >
+    File Menu
+  </button>
+  <ul id="menu1" role="menu">
+    <li role="menuitem">New</li>
+    <li role="menuitem">Open</li>
+    <li role="menuitem">Save</li>
+  </ul>
+
+  <h3>Invalid: Expandable Button missing aria-controls</h3>
+  <button
+    [attr.aria-expanded]="'false'"
+    [attr.aria-haspopup]="'menu'"
+  >
+    Edit Menu
+  </button>
+  <!-- Missing aria-controls when aria-expanded is present -->
+
+  <h3>Valid: Listbox with Selected Options</h3>
+  <ul role="listbox" [attr.aria-labelledby]="'listbox-label'" [attr.aria-multiselectable]="'true'">
+    <span id="listbox-label">Select your interests:</span>
+    <li role="option" [attr.aria-selected]="'true'">Sports</li>
+    <li role="option" [attr.aria-selected]="'false'">Music</li>
+    <li role="option" [attr.aria-selected]="'true'">Travel</li>
+  </ul>
+
+  <h3>Invalid: Listbox Options missing aria-selected</h3>
+  <ul role="listbox" [attr.aria-labelledby]="'invalid-listbox-label'">
+    <span id="invalid-listbox-label">Choose categories:</span>
+    <li role="option">Technology</li>
+    <li role="option">Science</li>
+    <!-- Missing aria-selected attributes on options -->
+  </ul>
+</section>
