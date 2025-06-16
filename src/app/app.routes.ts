@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { AriaValidAttrValueComponent } from './pages/aria-valid-attr-value/aria-valid-attr-value.component';
+import { AriaConditionalAttrComponent } from './pages/aria-conditional-attr/aria-conditional-attr.component';
 import { AriaCommandNameComponent } from './pages/aria-command-name/aria-command-name.component';
 import { AriaLabelledbyCasesComponent } from './pages/aria-command-name/aria-labelledby-cases/aria-labelledby-cases.component';
 import { AriaDeprecatedRoleComponent } from './pages/aria-deprecated-role/aria-deprecated-role.component';
@@ -39,6 +40,7 @@ import { NonCompliantComponent } from './pages/unordered-list/non-compliant/non-
 
 export const routes: Routes = [
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
+    { path: 'aria-conditional-attr', component: AriaConditionalAttrComponent },
     { path: 'aria-command-name', component: AriaCommandNameComponent },
     { path: 'aria-command-name/aria-labelledby-cases', component: AriaLabelledbyCasesComponent },
     { path: 'aria-deprecated-role', component: AriaDeprecatedRoleComponent },

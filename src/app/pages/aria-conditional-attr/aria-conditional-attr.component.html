@@ -1,0 +1,28 @@
+<!-- http://localhost:4000/aria-conditional-attr -->
+
+<h1>aria-conditional-attr</h1>
+
+<!-- Valid: Native checkbox without aria-checked -->
+<input type="checkbox" id="cb1" />
+<label for="cb1">Native checkbox</label>
+
+<!-- Valid: Treegrid row with conditional attributes -->
+<div role="treegrid">
+  <div role="row" [attr.aria-expanded]="'false'" [attr.aria-level]="'1'" [attr.aria-posinset]="'1'" [attr.aria-setsize]="'2'">
+    <div role="gridcell">Item 1</div>
+  </div>
+  <div role="row" [attr.aria-level]="'1'" [attr.aria-posinset]="'2'" [attr.aria-setsize]="'2'">
+    <div role="gridcell">Item 2</div>
+  </div>
+</div>
+
+<!-- Invalid: Native checkbox with aria-checked -->
+<input type="checkbox" id="cb2" [attr.aria-checked]="'false'" />
+<label for="cb2">Invalid checkbox</label>
+
+<!-- Invalid: Grid row with conditional attributes -->
+<table role="grid">
+  <tr role="row" [attr.aria-expanded]="'false'" [attr.aria-level]="'1'">
+    <td role="gridcell">Invalid</td>
+  </tr>
+</table>
