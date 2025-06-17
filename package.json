@@ -30,6 +30,7 @@
     "@tailwindcss/postcss": "^4.0.15",
     "eva-icons": "^1.1.3",
     "express": "^4.18.2",
+    "external-component": "file:../../angular-external-component/dist/external-component",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
