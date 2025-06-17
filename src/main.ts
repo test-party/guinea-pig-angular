@@ -7,10 +7,12 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 import { AppComponent } from './app/app.component';
 import { routes } from './app/app.routes';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 bootstrapApplication(AppComponent, {
   providers: [
     provideRouter(routes),
+    importProvidersFrom(FontAwesomeModule),
     importProvidersFrom(
       NbThemeModule.forRoot({ name: 'default' }),
       NbEvaIconsModule
