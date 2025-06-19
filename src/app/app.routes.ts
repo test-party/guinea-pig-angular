@@ -36,7 +36,6 @@ import { SelectNameComponent } from './pages/select-name/select-name.component';
 import { SvgImgAltComponent } from './pages/svg-img-alt/svg-img-alt.component';
 import { CompliantComponent } from './pages/unordered-list/compliant/compliant.component';
 import { NonCompliantComponent } from './pages/unordered-list/non-compliant/non-compliant.component';
-import { IssuesComponent } from './pages/issues/issues.component';
 import { ThirdpartyPageComponent } from './pages/thirdparty-page/thirdparty-page.component';
 
 export const routes: Routes = [
@@ -75,7 +74,6 @@ export const routes: Routes = [
     { path: 'scrollable-region-focusable', component: ScrollableRegionFocusableComponent },
     { path: 'select-name', component: SelectNameComponent },
     { path: 'svg-img-alt', component: SvgImgAltComponent },
-    { path: 'issues', component: IssuesComponent },
     { path: 'thirdparty-page', component: ThirdpartyPageComponent },
     { path: 'unordered-list/compliant', component: CompliantComponent },
     { path: 'unordered-list/non-compliant', component: NonCompliantComponent },
