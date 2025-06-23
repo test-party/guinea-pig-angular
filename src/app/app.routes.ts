@@ -38,6 +38,7 @@ import { SvgImgAltComponent } from './pages/svg-img-alt/svg-img-alt.component';
 import { CompliantComponent } from './pages/unordered-list/compliant/compliant.component';
 import { NonCompliantComponent } from './pages/unordered-list/non-compliant/non-compliant.component';
 import { FrameTitleComponent } from './pages/frame-title/frame-title.component';
+import { RoleImgAltComponent } from './pages/role-img-alt/role-img-alt.component';
 
 export const routes: Routes = [
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
@@ -74,6 +75,7 @@ export const routes: Routes = [
     { path: 'neurodiversity-ruleset/reading-level', component: ReadingLevelComponent },
     { path: 'neurodiversity-ruleset/unusual-words', component: UnusualWordsComponent },
     { path: 'region', component: RegionComponent },
+    { path: 'role-img-alt', component: RoleImgAltComponent },    
     { path: 'scrollable-region-focusable', component: ScrollableRegionFocusableComponent },
     { path: 'select-name', component: SelectNameComponent },
     { path: 'svg-img-alt', component: SvgImgAltComponent },
