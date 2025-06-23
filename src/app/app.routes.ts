@@ -37,6 +37,7 @@ import { SelectNameComponent } from './pages/select-name/select-name.component';
 import { SvgImgAltComponent } from './pages/svg-img-alt/svg-img-alt.component';
 import { CompliantComponent } from './pages/unordered-list/compliant/compliant.component';
 import { NonCompliantComponent } from './pages/unordered-list/non-compliant/non-compliant.component';
+import { FrameTitleComponent } from './pages/frame-title/frame-title.component';
 
 export const routes: Routes = [
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
@@ -58,6 +59,7 @@ export const routes: Routes = [
     { path: 'button-name', component: ButtonNameComponent },
     { path: 'color-contrast', component: ColorContrastComponent },
     { path: 'color-contrast/style-variants', component: StyleVariantsComponent },
+    { path: 'frame-title', component: FrameTitleComponent },    
     { path: 'focus-visible', component: FocusVisibleComponent },
     { path: 'headings', component: HeadingsComponent },
     { path: 'images', component: ImagesComponent },
