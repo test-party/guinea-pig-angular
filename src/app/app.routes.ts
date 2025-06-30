@@ -39,6 +39,7 @@ import { CompliantComponent } from './pages/unordered-list/compliant/compliant.c
 import { NonCompliantComponent } from './pages/unordered-list/non-compliant/non-compliant.component';
 import { FrameTitleComponent } from './pages/frame-title/frame-title.component';
 import { RoleImgAltComponent } from './pages/role-img-alt/role-img-alt.component';
+import { TdHeadersAttrComponent } from './pages/td-headers-attr/td-headers-attr.component';
 
 export const routes: Routes = [
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
@@ -79,6 +80,7 @@ export const routes: Routes = [
     { path: 'scrollable-region-focusable', component: ScrollableRegionFocusableComponent },
     { path: 'select-name', component: SelectNameComponent },
     { path: 'svg-img-alt', component: SvgImgAltComponent },
+    { path: 'td-headers-attr', component: TdHeadersAttrComponent },    
     { path: 'unordered-list/compliant', component: CompliantComponent },
     { path: 'unordered-list/non-compliant', component: NonCompliantComponent },
 ];
