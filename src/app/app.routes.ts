@@ -40,6 +40,7 @@ import { NonCompliantComponent } from './pages/unordered-list/non-compliant/non-
 import { FrameTitleComponent } from './pages/frame-title/frame-title.component';
 import { RoleImgAltComponent } from './pages/role-img-alt/role-img-alt.component';
 import { TdHeadersAttrComponent } from './pages/td-headers-attr/td-headers-attr.component';
+import { AriaHiddenFocusComponent } from './pages/aria-hidden-focus/aria-hidden-focus.component';
 
 export const routes: Routes = [
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
@@ -47,6 +48,7 @@ export const routes: Routes = [
     { path: 'aria-command-name', component: AriaCommandNameComponent },
     { path: 'aria-command-name/aria-labelledby-cases', component: AriaLabelledbyCasesComponent },
     { path: 'aria-deprecated-role', component: AriaDeprecatedRoleComponent },
+    { path: 'aria-hidden-focus', component: AriaHiddenFocusComponent },
     { path: 'aria-meter-name', component: AriaMeterNameComponent },
     { path: 'aria-invalid-attribute', component: AriaInvalidAttributeComponent },
     { path: 'aria-prohibited-attr', component: AriaProhibitedAttributeComponent },
