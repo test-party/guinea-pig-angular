@@ -43,6 +43,7 @@ import { TdHeadersAttrComponent } from './pages/td-headers-attr/td-headers-attr.
 import { AriaHiddenFocusComponent } from './pages/aria-hidden-focus/aria-hidden-focus.component';
 import { DefinitionListComponent } from './pages/definition-list/definition-list.component';
 import { DlItemComponent } from './pages/dlitem/dlitem.component';
+import { SummaryNameComponent } from "./pages/summary-name/summary-name.component";
 
 export const routes: Routes = [
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
@@ -85,6 +86,7 @@ export const routes: Routes = [
     { path: 'role-img-alt', component: RoleImgAltComponent },    
     { path: 'scrollable-region-focusable', component: ScrollableRegionFocusableComponent },
     { path: 'select-name', component: SelectNameComponent },
+    { path: 'summary-name', component: SummaryNameComponent },
     { path: 'svg-img-alt', component: SvgImgAltComponent },
     { path: 'td-headers-attr', component: TdHeadersAttrComponent },    
     { path: 'unordered-list/compliant', component: CompliantComponent },
