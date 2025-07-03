@@ -41,6 +41,7 @@ import { FrameTitleComponent } from './pages/frame-title/frame-title.component';
 import { RoleImgAltComponent } from './pages/role-img-alt/role-img-alt.component';
 import { TdHeadersAttrComponent } from './pages/td-headers-attr/td-headers-attr.component';
 import { AriaHiddenFocusComponent } from './pages/aria-hidden-focus/aria-hidden-focus.component';
+import { DefinitionListComponent } from './pages/definition-list/definition-list.component';
 
 export const routes: Routes = [
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
@@ -63,6 +64,7 @@ export const routes: Routes = [
     { path: 'button-name', component: ButtonNameComponent },
     { path: 'color-contrast', component: ColorContrastComponent },
     { path: 'color-contrast/style-variants', component: StyleVariantsComponent },
+    { path: 'definition-list', component: DefinitionListComponent },
     { path: 'frame-title', component: FrameTitleComponent },    
     { path: 'focus-visible', component: FocusVisibleComponent },
     { path: 'headings', component: HeadingsComponent },
