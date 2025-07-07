@@ -44,8 +44,10 @@ import { AriaHiddenFocusComponent } from './pages/aria-hidden-focus/aria-hidden-
 import { DefinitionListComponent } from './pages/definition-list/definition-list.component';
 import { DlItemComponent } from './pages/dlitem/dlitem.component';
 import { SummaryNameComponent } from "./pages/summary-name/summary-name.component";
+import { AccesskeysComponent } from './pages/accesskeys/accesskeys.component';
 
 export const routes: Routes = [
+    { path: 'accesskeys', component: AccesskeysComponent },
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
     { path: 'aria-conditional-attr', component: AriaConditionalAttrComponent },
     { path: 'aria-command-name', component: AriaCommandNameComponent },
