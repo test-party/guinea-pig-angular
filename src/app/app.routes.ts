@@ -49,6 +49,7 @@ import { AriaDialogNameComponent } from './pages/aria-dialog-name/aria-dialog-na
 import { AriaTextComponent } from './pages/aria-text/aria-text.component';
 import { AriaTreeitemNameComponent } from './pages/aria-treeitem-name/aria-treeitem-name.component';
 import { LabelTitleOnlyComponent } from './pages/label-title-only/label-title-only.component';
+import { TabindexComponent } from './pages/tabindex/tabindex.component';
 
 export const routes: Routes = [
     { path: 'accesskeys', component: AccesskeysComponent },
@@ -98,6 +99,7 @@ export const routes: Routes = [
     { path: 'select-name', component: SelectNameComponent },
     { path: 'summary-name', component: SummaryNameComponent },
     { path: 'svg-img-alt', component: SvgImgAltComponent },
+    { path: 'tabindex', component: TabindexComponent },
     { path: 'td-headers-attr', component: TdHeadersAttrComponent },    
     { path: 'unordered-list/compliant', component: CompliantComponent },
     { path: 'unordered-list/non-compliant', component: NonCompliantComponent },
