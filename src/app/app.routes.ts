@@ -50,6 +50,7 @@ import { AriaTextComponent } from './pages/aria-text/aria-text.component';
 import { AriaTreeitemNameComponent } from './pages/aria-treeitem-name/aria-treeitem-name.component';
 import { LabelTitleOnlyComponent } from './pages/label-title-only/label-title-only.component';
 import { TabindexComponent } from './pages/tabindex/tabindex.component';
+import { LabelContentNameMismatchComponent } from './pages/label-content-name-mismatch/label-content-name-mismatch.component';
 
 export const routes: Routes = [
     { path: 'accesskeys', component: AccesskeysComponent },
@@ -84,6 +85,7 @@ export const routes: Routes = [
     { path: 'images', component: ImagesComponent },
     { path: 'label', component: LabelComponent },
     { path: 'label-title-only', component: LabelTitleOnlyComponent },
+    { path: 'label-content-name-mismatch', component: LabelContentNameMismatchComponent },
     { path: 'link-name', component: LinkNameComponent },
     { path: 'meta-refresh', component: MetaRefreshComponent },
     { path: 'meta-viewport', component: MetaViewportComponent },
