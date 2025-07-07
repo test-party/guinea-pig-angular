@@ -52,6 +52,7 @@ import { LabelTitleOnlyComponent } from './pages/label-title-only/label-title-on
 import { TabindexComponent } from './pages/tabindex/tabindex.component';
 import { LabelContentNameMismatchComponent } from './pages/label-content-name-mismatch/label-content-name-mismatch.component';
 import { PAsHeadingComponent } from './pages/p-as-heading/p-as-heading.component';
+import { TableFakeCaptionComponent } from './pages/table-fake-caption/table-fake-caption.component';
 
 export const routes: Routes = [
     { path: 'accesskeys', component: AccesskeysComponent },
@@ -104,6 +105,7 @@ export const routes: Routes = [
     { path: 'summary-name', component: SummaryNameComponent },
     { path: 'svg-img-alt', component: SvgImgAltComponent },
     { path: 'tabindex', component: TabindexComponent },
+    { path: 'table-fake-caption', component: TableFakeCaptionComponent },
     { path: 'td-headers-attr', component: TdHeadersAttrComponent },    
     { path: 'unordered-list/compliant', component: CompliantComponent },
     { path: 'unordered-list/non-compliant', component: NonCompliantComponent },
