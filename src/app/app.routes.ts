@@ -45,6 +45,8 @@ import { DefinitionListComponent } from './pages/definition-list/definition-list
 import { DlItemComponent } from './pages/dlitem/dlitem.component';
 import { SummaryNameComponent } from "./pages/summary-name/summary-name.component";
 import { AccesskeysComponent } from './pages/accesskeys/accesskeys.component';
+import { AriaDialogNameComponent } from './pages/aria-dialog-name/aria-dialog-name.component';
+import { AriaTextComponent } from './pages/aria-text/aria-text.component';
 
 export const routes: Routes = [
     { path: 'accesskeys', component: AccesskeysComponent },
@@ -53,6 +55,7 @@ export const routes: Routes = [
     { path: 'aria-command-name', component: AriaCommandNameComponent },
     { path: 'aria-command-name/aria-labelledby-cases', component: AriaLabelledbyCasesComponent },
     { path: 'aria-deprecated-role', component: AriaDeprecatedRoleComponent },
+    { path: 'aria-dialog-name', component: AriaDialogNameComponent },
     { path: 'aria-hidden-focus', component: AriaHiddenFocusComponent },
     { path: 'aria-meter-name', component: AriaMeterNameComponent },
     { path: 'aria-invalid-attribute', component: AriaInvalidAttributeComponent },
@@ -63,6 +66,7 @@ export const routes: Routes = [
     { path: 'aria-roles', component: AriaRolesComponent },
     { path: 'aria-toggle', component: AriaToggleComponent },
     { path: 'aria-tooltip-name', component: AriaTooltipNameComponent },
+    { path: 'aria-text', component: AriaTextComponent },
     { path: 'aria-valid-attr', component: AriaValidAttrComponent },
     { path: 'audio', component: AudioComponent },
     { path: 'button-name', component: ButtonNameComponent },
