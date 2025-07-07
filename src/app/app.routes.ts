@@ -51,6 +51,7 @@ import { AriaTreeitemNameComponent } from './pages/aria-treeitem-name/aria-treei
 import { LabelTitleOnlyComponent } from './pages/label-title-only/label-title-only.component';
 import { TabindexComponent } from './pages/tabindex/tabindex.component';
 import { LabelContentNameMismatchComponent } from './pages/label-content-name-mismatch/label-content-name-mismatch.component';
+import { PAsHeadingComponent } from './pages/p-as-heading/p-as-heading.component';
 
 export const routes: Routes = [
     { path: 'accesskeys', component: AccesskeysComponent },
@@ -95,6 +96,7 @@ export const routes: Routes = [
     { path: 'neurodiversity-ruleset/pronunciation', component: PronunciationComponent },
     { path: 'neurodiversity-ruleset/reading-level', component: ReadingLevelComponent },
     { path: 'neurodiversity-ruleset/unusual-words', component: UnusualWordsComponent },
+    { path: 'p-as-heading', component: PAsHeadingComponent },
     { path: 'region', component: RegionComponent },
     { path: 'role-img-alt', component: RoleImgAltComponent },    
     { path: 'scrollable-region-focusable', component: ScrollableRegionFocusableComponent },
