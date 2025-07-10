@@ -1,0 +1,25 @@
+<!-- http://localhost:4000/tabindex -->
+<!-- Tabindex violations and acceptable uses -->
+<div>
+    <h1>Tabindex Test</h1>
+
+    <!-- Violation: Positive tabindex values -->
+    <button tabindex="5">Button with tabindex 5 (violation)</button>
+    <input type="text" tabindex="3" placeholder="Input with tabindex 3 (violation)" />
+    <button tabindex="1">Button with tabindex 1 (violation)</button>
+
+    <!-- Violation: Very high positive tabindex -->
+    <a href="#" tabindex="999">Link with tabindex 999 (violation)</a>
+
+    <!-- Violation: Positive tabindex on non-interactive element -->
+    <div tabindex="2">Div with positive tabindex (violation)</div>
+
+    <!-- Violation: Positive tabindex disrupting natural flow -->
+    <p>This paragraph comes first in DOM order</p>
+    <button tabindex="10">This button has tabindex 10 (violation)</button>
+    <button>This button comes after but will be focused first due to tabindex</button>
+
+    <!-- Acceptable: tabindex 0 and -1 -->
+    <div tabindex="0">Div with tabindex 0 (acceptable)</div>
+    <span tabindex="-1">Span with tabindex -1 (acceptable)</span>
+</div>

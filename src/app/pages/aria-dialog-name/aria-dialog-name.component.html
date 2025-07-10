@@ -1,0 +1,18 @@
+<!-- http://localhost:4000/aria-dialog-name -->
+<!-- Dialog with no accessible name -->
+<div>
+    <!-- Empty dialog with no name -->
+    <div role="dialog" id="empty"></div>
+    
+    <!-- Dialog with empty aria-label -->
+    <div role="dialog" id="alempty" aria-label=""></div>
+    
+    <!-- Dialog with aria-labelledby pointing to nonexistent element -->
+    <div role="dialog" id="albmissing" aria-labelledby="nonexistent"></div>
+    
+    <!-- Dialog with aria-labelledby pointing to empty element -->
+    <div role="dialog" id="albempty" aria-labelledby="emptydiv"></div>
+    
+    <!-- Empty div referenced by aria-labelledby -->
+    <div id="emptydiv"></div>
+</div>

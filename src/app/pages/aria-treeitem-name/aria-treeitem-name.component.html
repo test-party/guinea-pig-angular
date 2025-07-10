@@ -1,0 +1,18 @@
+<!-- http://localhost:4000/aria-treeitem-name -->
+<!-- Tree item with no accessible name -->
+<div>
+    <!-- Tree item with no name -->
+    <div role="treeitem"></div>
+
+    <!-- Tree item with empty aria-label -->
+    <div role="treeitem" aria-label=""></div>
+
+    <!-- Tree item with aria-labelledby pointing to nonexistent element -->
+    <div role="treeitem" aria-labelledby="nonexistent"></div>
+
+    <!-- Tree item with aria-labelledby pointing to empty element -->
+    <div role="treeitem" aria-labelledby="emptydiv"></div>
+    
+    <!-- Empty div referenced by aria-labelledby -->
+    <div id="emptydiv"></div>
+</div>

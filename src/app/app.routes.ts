@@ -44,13 +44,24 @@ import { AriaHiddenFocusComponent } from './pages/aria-hidden-focus/aria-hidden-
 import { DefinitionListComponent } from './pages/definition-list/definition-list.component';
 import { DlItemComponent } from './pages/dlitem/dlitem.component';
 import { SummaryNameComponent } from "./pages/summary-name/summary-name.component";
+import { AccesskeysComponent } from './pages/accesskeys/accesskeys.component';
+import { AriaDialogNameComponent } from './pages/aria-dialog-name/aria-dialog-name.component';
+import { AriaTextComponent } from './pages/aria-text/aria-text.component';
+import { AriaTreeitemNameComponent } from './pages/aria-treeitem-name/aria-treeitem-name.component';
+import { LabelTitleOnlyComponent } from './pages/label-title-only/label-title-only.component';
+import { TabindexComponent } from './pages/tabindex/tabindex.component';
+import { LabelContentNameMismatchComponent } from './pages/label-content-name-mismatch/label-content-name-mismatch.component';
+import { PAsHeadingComponent } from './pages/p-as-heading/p-as-heading.component';
+import { TableFakeCaptionComponent } from './pages/table-fake-caption/table-fake-caption.component';
 
 export const routes: Routes = [
+    { path: 'accesskeys', component: AccesskeysComponent },
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
     { path: 'aria-conditional-attr', component: AriaConditionalAttrComponent },
     { path: 'aria-command-name', component: AriaCommandNameComponent },
     { path: 'aria-command-name/aria-labelledby-cases', component: AriaLabelledbyCasesComponent },
     { path: 'aria-deprecated-role', component: AriaDeprecatedRoleComponent },
+    { path: 'aria-dialog-name', component: AriaDialogNameComponent },
     { path: 'aria-hidden-focus', component: AriaHiddenFocusComponent },
     { path: 'aria-meter-name', component: AriaMeterNameComponent },
     { path: 'aria-invalid-attribute', component: AriaInvalidAttributeComponent },
@@ -61,6 +72,8 @@ export const routes: Routes = [
     { path: 'aria-roles', component: AriaRolesComponent },
     { path: 'aria-toggle', component: AriaToggleComponent },
     { path: 'aria-tooltip-name', component: AriaTooltipNameComponent },
+    { path: 'aria-text', component: AriaTextComponent },
+    { path: 'aria-treeitem-name', component: AriaTreeitemNameComponent },
     { path: 'aria-valid-attr', component: AriaValidAttrComponent },
     { path: 'audio', component: AudioComponent },
     { path: 'button-name', component: ButtonNameComponent },
@@ -73,6 +86,8 @@ export const routes: Routes = [
     { path: 'headings', component: HeadingsComponent },
     { path: 'images', component: ImagesComponent },
     { path: 'label', component: LabelComponent },
+    { path: 'label-title-only', component: LabelTitleOnlyComponent },
+    { path: 'label-content-name-mismatch', component: LabelContentNameMismatchComponent },
     { path: 'link-name', component: LinkNameComponent },
     { path: 'meta-refresh', component: MetaRefreshComponent },
     { path: 'meta-viewport', component: MetaViewportComponent },
@@ -82,12 +97,15 @@ export const routes: Routes = [
     { path: 'neurodiversity-ruleset/pronunciation', component: PronunciationComponent },
     { path: 'neurodiversity-ruleset/reading-level', component: ReadingLevelComponent },
     { path: 'neurodiversity-ruleset/unusual-words', component: UnusualWordsComponent },
+    { path: 'p-as-heading', component: PAsHeadingComponent },
     { path: 'region', component: RegionComponent },
     { path: 'role-img-alt', component: RoleImgAltComponent },    
     { path: 'scrollable-region-focusable', component: ScrollableRegionFocusableComponent },
     { path: 'select-name', component: SelectNameComponent },
     { path: 'summary-name', component: SummaryNameComponent },
     { path: 'svg-img-alt', component: SvgImgAltComponent },
+    { path: 'tabindex', component: TabindexComponent },
+    { path: 'table-fake-caption', component: TableFakeCaptionComponent },
     { path: 'td-headers-attr', component: TdHeadersAttrComponent },    
     { path: 'unordered-list/compliant', component: CompliantComponent },
     { path: 'unordered-list/non-compliant', component: NonCompliantComponent },
