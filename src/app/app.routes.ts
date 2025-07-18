@@ -53,9 +53,11 @@ import { TabindexComponent } from './pages/tabindex/tabindex.component';
 import { LabelContentNameMismatchComponent } from './pages/label-content-name-mismatch/label-content-name-mismatch.component';
 import { PAsHeadingComponent } from './pages/p-as-heading/p-as-heading.component';
 import { TableFakeCaptionComponent } from './pages/table-fake-caption/table-fake-caption.component';
+import { AriaBrailleEquivalentComponent } from './pages/aria-braille-equivalent/aria-braille-equivalent.component';
 
 export const routes: Routes = [
     { path: 'accesskeys', component: AccesskeysComponent },
+    { path: 'aria-braille-equivalent', component: AriaBrailleEquivalentComponent },
     { path: 'aria-valid-attr-value', component: AriaValidAttrValueComponent },
     { path: 'aria-conditional-attr', component: AriaConditionalAttrComponent },
     { path: 'aria-command-name', component: AriaCommandNameComponent },
